@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<form action="formdata.php" method="post" name="form1">
+    <fieldset>
+    <legend>Enter own data</legend>
+    <p><label>Enter your name (max 20 chars):<input type="text" name="Name" size="15" maxlength="20"></label></p>
+    <p><label>Enter your password (max 20 chars):<input type="password" name="Name" size="15" maxlength="20"></label></p>
+    </fieldset>
+    <fieldset>
+    <legend>Quastions</legend>
+    <p>Safe time?</p>
+    <p><label>Yes<input type="radio" name="time" value="yes" checked></label></p><p><label>No<input type="radio" name="time" value="no"></label></p>
+    <p>What is your name?</p>
+    <p>
+        <label><input type="checkbox" name="sv" checked disabled>Home</label>
+     <label><input type="checkbox" name="ev" >Work</label>
+     <label><input type="checkbox" name="qv" >Hobby</label>
+    </fieldset>
+    </p>
+    <p>Сколько часв в день вы спите?</p>
+    <p>
+    <select name="sleep" size="3" multiple>
+        <option>4</option>
+        <option selected>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+    </select>
+    </p>
+
+    <p><label for="text">Поделится своими наработками?</label></p>
+    <p><textarea name = "text" cols="50" rows="10" id ="text" readonly>Text area...</textarea></p>
+
+    <p><input type="reset" name="reset" value="Reset"><input type = "submit" name="submit" value="Send"></p>
+    <p><input type="image" src="img/ibutton.png" name="imgBut"></p>
+    <p><input type="button" value="Button" name="button"> </p>
+</form>
+</body>
+</html>
